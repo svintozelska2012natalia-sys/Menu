@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню кафе Vashi</title>
+    <style>
+        :root {
+            --primary-color: #2c221e;
+            --accent-color: #c59b27;
+            --bg-color: #f9f6f0;
+            --card-bg: #ffffff;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .category-title {
+            color: var(--primary-color);
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .item-info {
+            flex-grow: 1;
+            padding-right: 15px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .item-desc {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 3px;
+        }
+
+        /* Ефект точок між назвою та ціною */
+        .item-dots {
+            flex-grow: 1;
+            border-bottom: 1px dotted #ccc;
+            margin: 0 10px;
+            position: relative;
+            top: -4px;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.1em;
+            white-space: nowrap;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid var(--bg-color);
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>КАФЕ VASHI</h1>
+            <div class="subtitle">Смачна їжа, затишна атмосфера та найкраща кава</div>
+        </header>
+
+        <!-- Сніданки -->
+        <div class="category-title">Сніданки</div>
+        
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Авокадо-тост з яйцем пашот</div>
+                <div class="item-desc">Хрусткий хліб, стигле авокадо, яйце пашот, мікс насіння</div>
+            </div>
+            <div class="item-dots"></div>
+            <div class="item-price">185.00 грн</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Класичний англійський сніданок</div>
+                <div class="item-desc">Яєчня, ковбаски, бекон, квасоля, томати, тости</div>
+            </div>
+            <div class="item-dots"></div>
+            <div class="item-price">220.00 грн</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Сирники з соусом манго</div>
+                <div class="item-desc">Ніжний кисломолочний сир, сметана, соус манго-маракуйя</div>
+            </div>
+            <div class="item-dots"></div>
+            <div class="item-price">160.00 грн</div>
+        </div>
+
+        <!-- Основні страви -->
+        <div class="category-title">Основні страви</div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Паста Карбонара</div>
+                <div class="item-desc">Спагеті, бекон, жовток, сир Пармезан, вершки</div>
+            </div>
+            <div class="item-dots"></div>
+            <div class="item-price">210.00 грн</div>
+        </div>
+
+        <div class="menu-item">
+            <div class="item-info">
+                <div class="item-name">Стейк з лосося з овочами</div>
